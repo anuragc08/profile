@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root { color-scheme: light dark; }
+html { scroll-behavior: smooth; }
+
+
+/* Fancy gradient bg helpers */
+.bg-page {
+@apply bg-gradient-to-br from-gray-50 via-white to-gray-100 dark:from-gray-950 dark:via-gray-900 dark:to-black;
+}
+
+
+.card-glass {
+@apply backdrop-blur-lg bg-white/30 dark:bg-gray-800/30 border border-white/20 dark:border-gray-700/20 shadow-soft rounded-2xl;
+}
+
+
+.btn-primary {
+@apply px-4 py-2 rounded-xl bg-indigo-600 text-white hover:bg-indigo-700 transition;
+}
+
+
+.tag-chip {
+@apply px-2 py-1 rounded-full text-xs bg-indigo-100 text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-300;
+}
